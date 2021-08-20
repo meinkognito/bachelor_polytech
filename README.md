@@ -1,4 +1,4 @@
-# bachelor_polytech
+# Peter the Great St.Petersburg Polytechnic University, Software Engineering (bachelor)
 
 ## Second semester
 
