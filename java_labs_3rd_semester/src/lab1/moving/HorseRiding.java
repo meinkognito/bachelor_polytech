@@ -9,10 +9,6 @@ public class HorseRiding implements Movement {
     return newPoint;
   }
 
-  public static String test() {
-    return "horseriding";
-  }
-
   @Override
   public String toString() {
     return "HorseRiding";

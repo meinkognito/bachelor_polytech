@@ -19,14 +19,12 @@ public class Main {
       }
       try {
         switch (command) {
-          case "ME":
-            System.out.println(hero);
-            break;
-          case "MOVE_TO":
+          case "ME" -> System.out.println(hero);
+          case "MOVE_TO" -> {
             System.out.println("Enter coordinates to travel");
             hero.move(new Point(sc.nextDouble(), sc.nextDouble()));
-            break;
-          case "CHANGE_MOVEMENT":
+          }
+          case "CHANGE_MOVEMENT" -> {
             System.out.println("""
                 Choose type of movement from the list:
                 Walking
@@ -35,9 +33,8 @@ public class Main {
                 Flying
                 Teleportation""");
             hero.setMovementType(sc.next());
-            break;
-          default:
-            throw new IllegalArgumentException();
+          }
+          default -> throw new IllegalArgumentException();
         }
       } catch (IllegalArgumentException e) {
         System.out.println("""
