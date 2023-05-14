@@ -10,4 +10,10 @@
 
  ## Fourth semester
 
- * [Library Spring server coursework - Java](coursework_4th_semester)
+ * [Spring server coursework - Java](coursework_4th_semester)
+
+ ## Sixth semester
+
+ * [Statistical model - Swift](statistical-model)
+
+ * [ML - Python](ML)
