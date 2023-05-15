@@ -21,6 +21,10 @@ for i in range(1, 15):
     tmp = (pred == data[border:, -1]).sum() / data[border:, -1].shape[0]
     res.append(tmp)
     print(str(i) + " " + str(tmp))
+    # plt.rcParams["figure.figsize"] = (20, 40)
+    # tree.plot_tree(clf, class_names=["1", "2", "3", "4", "5", "6", "7"])
+    plt.savefig("result/tree" + str(i) + ".png")
+
 print(clf.get_depth())
 
 plt.rcParams["figure.figsize"] = (10, 5)

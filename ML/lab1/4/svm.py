@@ -195,8 +195,8 @@ test = pd.read_csv('data/svmdata_e_test.txt', delimiter="\t").to_numpy()
 x_train = train[:, 0:-1]
 y_train = train[:, -1]
 
-C = 1  # SVM regularization parameter
-gamma = 100
+C = 1000  # SVM regularization parameter
+gamma = 10
 models = (
     svm.SVC(kernel="linear", C=C, gamma=gamma),
     svm.SVC(kernel="rbf", C=C, gamma=gamma),

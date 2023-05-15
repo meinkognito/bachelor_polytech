@@ -9,12 +9,12 @@ import random
 
 data = []
 for i in range(0, 20):  # class -1
-    x1 = np.random.normal(15, 3, 1)[0]
-    x2 = np.random.normal(18, 3, 1)[0]
+    x1 = np.random.normal(10, 3, 1)[0]
+    x2 = np.random.normal(14, 3, 1)[0]
     data.append([x1, x2, -1])
 for i in range(0, 80):  # class 1
-    x1 = np.random.normal(17, 1, 1)[0]
-    x2 = np.random.normal(16, 1, 1)[0]
+    x1 = np.random.normal(19, 4, 1)[0]
+    x2 = np.random.normal(16, 4, 1)[0]
     data.append([x1, x2, 1])
 
 data = np.array(data)

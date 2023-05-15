@@ -29,12 +29,12 @@ random.shuffle(data)
 X_test = data[:, 1:]
 y_test = data[:, 0]
 
-pred = gnb.predict(X_test)
+# pred = gnb.predict(X_test)
 
 # pred = tree.predict(X_test)
 # print(accuracy_score(y_test, pred))
 
-# pred = knn.predict(X_test)
+pred = knn.predict(X_test)
 # print(accuracy_score(y_test, pred))
 
 print(accuracy_score(y_test, pred))
